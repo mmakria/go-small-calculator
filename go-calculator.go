@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var revenue float64
-	var expenses float64
-	var taxRate float64
+	//var revenue float64
+	//var expenses float64
+	//var taxRate float64
 	//fmt.Print("Enter Revenue: ")
 	//fmt.Scan(&revenue)
 	//fmt.Print("Enter Expenses: ")
@@ -13,9 +13,9 @@ func main() {
 	//fmt.Print("Enter Tax Rate: ")
 	//fmt.Scan(&taxRate)
 
-	revenue = getUserInput("Enter revenue: ")
-	expenses = getUserInput("Enter Expenses: ")
-	taxRate = getUserInput("Enter Tax Rate: ")
+	revenue := getUserInput("Enter revenue: ")
+	expenses := getUserInput("Enter Expenses: ")
+	taxRate := getUserInput("Enter Tax Rate: ")
 
 	//ebt := revenue - expenses
 	//profit := ebt * (1 - taxRate/100)
@@ -29,15 +29,15 @@ func main() {
 
 }
 
-func inputOutputFlow(revenue, expenses, taxRate float64) (float64, float64, float64) {
-	fmt.Print("Enter Revenue: ")
-	fmt.Scan(&revenue)
-	fmt.Print("Enter Expenses: ")
-	fmt.Scan(&expenses)
-	fmt.Print("Enter Tax Rate: ")
-	fmt.Scan(&taxRate)
-	return revenue, expenses, taxRate
-}
+//func inputOutputFlow(revenue, expenses, taxRate float64) (float64, float64, float64) {
+//	fmt.Print("Enter Revenue: ")
+//	fmt.Scan(&revenue)
+//	fmt.Print("Enter Expenses: ")
+//	fmt.Scan(&expenses)
+//	fmt.Print("Enter Tax Rate: ")
+//	fmt.Scan(&taxRate)
+//	return revenue, expenses, taxRate
+//}
 
 func getUserInput(input string) float64 {
 	var output float64
